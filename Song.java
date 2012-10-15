@@ -1,5 +1,4 @@
 import java.util.Calendar;
-import java.text.SimpleDateFormat;
 
 public class Song
 {
@@ -7,6 +6,7 @@ public class Song
 	private int length; 	//length in seconds
 	private Calendar start;	//Date of first appearence in repertoire
 	private Calendar end;	//last Date of the song in repertoire
+	
 	
 	public Song(String name, int length)
 	{

@@ -4,7 +4,11 @@ import java.text.SimpleDateFormat;
 public class Test {
 
 	public static void main(String[] args){
+<<<<<<< HEAD
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.mm.dd");
+=======
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
+>>>>>>> added Test cases
 
 		
 		Calendar time1 = Calendar.getInstance();
@@ -42,10 +46,13 @@ public class Test {
 		System.out.println(gig);
 		System.out.println(dateFormat.format(song.getEndDate().getTime()));
 		System.out.println(song);
+<<<<<<< HEAD
 		
 		System.out.println('\n' + "Specific Rehearsals");
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time2, time3));
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
+=======
+>>>>>>> added Test cases
 		
 	}
 }
