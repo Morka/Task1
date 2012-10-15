@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
 
 public class Band {
 	
@@ -8,6 +10,9 @@ public class Band {
 	//private ArrayList<Rehearsal> rehearsalList = new ArrayList<Rehearsal>();
 	private ArrayList<Event> eventList = new ArrayList<Event>();
 	private ArrayList<Song> songList = new ArrayList<Song>();
+	
+			SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+
 	
 	public Band(){
 	
@@ -47,7 +52,10 @@ public class Band {
 		
 		String retString = "";
 		
-		retString = showRehearsals(specificDate, specificDate);
+		Calendar newCal = Calendar.getInstance();
+		newCal.setTime(specificDate.getTime());
+		
+		retString = showRehearsals(specificDate, newCal);
 		
 		return retString;
 		
@@ -55,9 +63,14 @@ public class Band {
 	
 	public String showRehearsals(Calendar fromDate, Calendar toDate){		
 		String retString = "";
+
 		fromDate.add(Calendar.DAY_OF_MONTH, -1);
 		toDate.add(Calendar.DAY_OF_MONTH, 1);
 		
+		System.out.println("FROM DATE: " + dateFormat.format(fromDate.getTime()));
+		System.out.println("TO DATE: " + dateFormat.format(toDate.getTime()));
+
+		/*
 		for(Event r : this.eventList){
 			
 			if(r instanceof Rehearsal && (r.getDate().after(fromDate) && r.getDate().before(toDate))) {
@@ -66,6 +79,18 @@ public class Band {
 				
 			}
 			
+		}*/
+		for(Event r : this.eventList){
+			if(r instanceof Rehearsal){
+				System.out.println("YEAH");
+				System.out.println(dateFormat.format(r.getDate().getTime()));
+				if(r.getDate().after(fromDate)){
+					System.out.println("YEAH1");
+					if(r.getDate().before(toDate)){
+						System.out.println("YEAH2");
+					}
+				}
+			}
 		}
 		
 		return retString;
