@@ -17,10 +17,6 @@ public class Gig extends Event{
 	public void setFee(int fee){
 		this.fee = fee;
 	}
-	/*
-	public String toString(){
-		return location + ";" + duration + ";" + date + ";" + fee;
-	}*/
 	
 	public String toString(){
 		return super.toString() + ", Fee: " + fee;

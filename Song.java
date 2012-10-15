@@ -1,31 +1,32 @@
-import java.util.Date;
+import java.util.Calendar;
 
 public class Song
 {
 	private String name;  	//song name
 	private int length; 	//length in seconds
-	private Date start;	//Date of first appearence in repertoire
-	private Date end;	//last Date of the song in repertoire
+	private Calendar start;	//Date of first appearence in repertoire
+	private Calendar end;	//last Date of the song in repertoire
 	
 	public Song(String name, int length)
 	{
+		this.start.getInstance(); //sets current Date. NOT TESTED!
+		
 		this.name = name;
 		this.length = length;
-		this.start = new Date(); //sets current Date
 		this.end = null;
 	}
 	
-	public void setDate(Date date)
+	public void setDate(Calendar date)
 	{
 		this.start = date;
 	}
 	
-	public Date getStartDate()
+	public Calendar getStartDate()
 	{
 		return start;
 	}
 	
-	public Date getEndDate()
+	public Calendar getEndDate()
 	{
 		return end;
 	}
