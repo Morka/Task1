@@ -9,7 +9,6 @@ public class Test {
 		Calendar time2 = Calendar.getInstance();
 		Calendar time3 = Calendar.getInstance();
 		Calendar time4 = Calendar.getInstance();
-
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
