@@ -7,19 +7,17 @@ public class Song
 	private Calendar start;	//Date of first appearence in repertoire
 	private Calendar end;	//last Date of the song in repertoire
 	
-	
 	public Song(String name, int length)
 	{
-		this.start = Calendar.getInstance(); //sets current Date
-		
 		this.name = name;
 		this.length = length;
+		this.start = Calendar.getInstance(); //sets current Date
 		this.end = null;
 	}
 	
 	public void setDate(Calendar date)
 	{
-		this.end = date;
+		this.start = date;
 	}
 	
 	public Calendar getStartDate()
