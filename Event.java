@@ -44,7 +44,7 @@ public abstract class Event{
 	}
 	
 	public String toString(){
-		return "Location: " + location + ", Duration: " + duration + ", Date: " + dateFormat.format(date.getTime());;
+		return "Location: " + location + ", Duration: " + duration + ", Date: " + dateFormat.format(date.getTime());
 	}
 	
 }
