@@ -45,10 +45,6 @@ public class Test {
 		System.out.println('\n' + "Specific Rehearsals");
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time2, time3));
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
-
-		System.out.println('\n' + "Specific Rehearsals");
-		System.out.println("At time 30,05,2011: " + band.showRehearsals(time2, time3));
-		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
 		
 	}
 }
