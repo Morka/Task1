@@ -72,6 +72,7 @@ public class Band {
 		return retString;
 		
 	}
+	
 	/*
 	public void showRehearsals(Calendar from, Calendar to){
 		
