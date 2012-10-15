@@ -8,6 +8,9 @@ public abstract class Event{
 	
 	protected Calendar date; //date AND time of the Event *SimpleDateFormat*
 	
+	protected SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
+
+	
 	public Event(int duration, String location, Calendar date){
 		this.duration = duration;
 		this.location = location;
@@ -35,12 +38,12 @@ public abstract class Event{
 		this.date = date;
 	}	
 	
-	public Calendar getDate(){
-		return date;
+	public String getDate(){
+		return dateFormat.format(date.getTime);
 	}
 	
 	public String toString(){
-		return "Location: " + location + ", Duration: " + duration + ", Date: " + date;
+		return "Location: " + location + ", Duration: " + duration + ", Date: " + getDate());
 	}
 	
 }

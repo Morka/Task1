@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 public class Song
 {
@@ -6,10 +7,11 @@ public class Song
 	private int length; 	//length in seconds
 	private Calendar start;	//Date of first appearence in repertoire
 	private Calendar end;	//last Date of the song in repertoire
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
 	
 	public Song(String name, int length)
 	{
-		this.start.getInstance(); //sets current Date. NOT TESTED!
+		this.start = Calendar.getInstance(); //sets current Date
 		
 		this.name = name;
 		this.length = length;
@@ -21,14 +23,14 @@ public class Song
 		this.start = date;
 	}
 	
-	public Calendar getStartDate()
+	public String getStartDate()
 	{
-		return start;
+		return dateFormat.format(start.getTime());
 	}
 	
-	public Calendar getEndDate()
+	public String getEndDate()
 	{
-		return end;
+		return dateFormat.format(end.getTime());
 	}
 	
 	public String getName()
