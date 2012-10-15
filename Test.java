@@ -19,7 +19,11 @@ public class Test {
 		time1.set(2011, 05, 30);
 		time2.set(2010, 06, 23);
 		time3.set(2012, 06, 23);
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> Specific Rehearsal not working
 		
 		Band band = new Band();
 		
@@ -53,6 +57,12 @@ public class Test {
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
 =======
 >>>>>>> added Test cases
+		
+		
+		
+		System.out.println('\n' + "Specific Rehearsals");
+		System.out.println("At time 30,05,2011: " + band.showRehearsals(time2, time3));
+		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
 		
 	}
 }
