@@ -24,7 +24,7 @@ public class Song
 	
 	public Calendar getStartDate()
 	{
-		return start
+		return start;
 	}
 	
 	public Calendar getEndDate()
