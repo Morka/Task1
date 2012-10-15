@@ -20,5 +20,21 @@ public class Member {
 		this.exitDate = Calendar.getInstance();
 		
 	}
+	
+	public Calendar getEntryDate(){
+		
+		return this.enteringDate;
+		
+	}
+	
+	public Calendar getExitDate(){
+		
+		return this.exitDate;
+		
+	}
+	
+	public String toString(){
+		return "Name: " + name + ", Instrument: " + instrument;
+	}
 
 }

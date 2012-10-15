@@ -63,7 +63,7 @@ public class Band {
 			
 			if(r instanceof Rehearsal && (r.getDate().after(fromDate) && r.getDate().before(toDate))) {
 				
-				retString = retString + r.toString();
+				retString = retString + r.toString() + "\n";
 				
 			}
 			
@@ -73,29 +73,65 @@ public class Band {
 		
 	}
 	
-	/*
-	public void showRehearsals(Calendar from, Calendar to){
+	public String showGigs(Calendar specificDate){
 		
-		//String outputString = "";
+		String retString = "";
 		
-		for(Rehearsal r : this.rehearsalList){
+		retString = showGigs(specificDate, specificDate);
+		
+		return retString;
+		
+	}
+	
+	public String showGigs(Calendar fromDate, Calendar toDate){
+		
+		String retString = "";
+		fromDate.add(Calendar.DAY_OF_MONTH, -1);
+		toDate.add(Calendar.DAY_OF_MONTH, 1);
+		
+		for(Event r : this.eventList){
 			
-			//if() wenn nach from und vor to ist -> to string
+			if(r instanceof Gig && (r.getDate().after(fromDate) && r.getDate().before(toDate))) {
+				
+				retString = retString + r.toString() + "\n";
+				
+			}
 			
 		}
 		
-	}
-	
-	public void showGigs(Calendar from, Calendar to){
-		
-		//for each gleich wie bei rehearsals
+		return retString;
 		
 	}
 	
-	public void showEvents(Calendar from, Calendar to){
 	
-		//rufe andere methoden auf
+	public String showEvents(Calendar from, Calendar to){
+	
+		String retString = "Rehearsals: \n";
+		retString = retString + this.showRehearsals(from, to);
 		
-	}*/
+		retString = retString + "Gigs: \n";
+		retString = retString + this.showGigs(from, to);
+		
+		return retString;
+		
+	}
+	
+	public String showMember(Calendar specificDate){
+		
+		String retString = "";
+		
+		for(Member m : this.memberList){
+			
+			if(m.getEntryDate().before(specificDate) && (m.getExitDate().after(specificDate) || m.getExitDate() == null)) {
+				
+				retString = retString + m.toString() + "\n";
+				
+			}
+			
+		}
+		
+		return retString;
+		
+	}
 
 }
