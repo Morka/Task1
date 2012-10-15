@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.util.Calendar;
 
 public abstract class Event{
 	
@@ -6,9 +6,9 @@ public abstract class Event{
 	
 	protected String location; //location of the Event
 	
-	protected Date date; //date AND time of the Event *SimpleDateFormat*
+	protected Calendar date; //date AND time of the Event *SimpleDateFormat*
 	
-	public Event(int duration, String location, Date date){
+	public Event(int duration, String location, Calendar date){
 		this.duration = duration;
 		this.location = location;
 		this.date = date;
@@ -31,11 +31,11 @@ public abstract class Event{
 		return duration;
 	}
 	
-	public void setDate(Date date){
+	public void setDate(Calendar date){
 		this.date = date;
 	}	
 	
-	public Date getDate(){
+	public Calendar getDate(){
 		return date;
 	}
 	

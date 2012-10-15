@@ -1,10 +1,10 @@
-import java.util.Date;
+import java.util.Calendar;
 
 public class Gig extends Event{
 	
 	private int fee;
 	
-	public Gig(int duration, String location, Date date, int fee){
+	public Gig(int duration, String location, Calendar date, int fee){
 		super(duration, location, date);
 		
 		this.fee = fee;
