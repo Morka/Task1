@@ -9,7 +9,7 @@ public abstract class Event{
 	
 	protected Calendar date; //date AND time of the Event *SimpleDateFormat*
 	
-	protected SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
+	protected SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 	
 	public Event(int duration, String location, Calendar date){

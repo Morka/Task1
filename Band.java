@@ -70,7 +70,7 @@ public class Band {
 		System.out.println("FROM DATE: " + dateFormat.format(fromDate.getTime()));
 		System.out.println("TO DATE: " + dateFormat.format(toDate.getTime()));
 
-		/*
+
 		for(Event r : this.eventList){
 			
 			if(r instanceof Rehearsal && (r.getDate().after(fromDate) && r.getDate().before(toDate))) {
@@ -79,18 +79,6 @@ public class Band {
 				
 			}
 			
-		}*/
-		for(Event r : this.eventList){
-			if(r instanceof Rehearsal){
-				System.out.println("YEAH");
-				System.out.println(dateFormat.format(r.getDate().getTime()));
-				if(r.getDate().after(fromDate)){
-					System.out.println("YEAH1");
-					if(r.getDate().before(toDate)){
-						System.out.println("YEAH2");
-					}
-				}
-			}
 		}
 		
 		return retString;
