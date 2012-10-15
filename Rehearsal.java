@@ -1,10 +1,10 @@
-import java.util.Date;
+import java.util.Calendar;
 
 public class Rehearsal extends Event{
 	
 	private int rent;
 
-	public Rehearsal(int duration, String location, Date date, int rent){
+	public Rehearsal(int duration, String location, Calendar date, int rent){
 		super(duration, location, date);
 		
 		this.rent = rent;
