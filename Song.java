@@ -23,14 +23,14 @@ public class Song
 		this.start = date;
 	}
 	
-	public String getStartDate()
+	public Calendar getStartDate()
 	{
-		return dateFormat.format(start.getTime());
+		return start
 	}
 	
-	public String getEndDate()
+	public Calendar getEndDate()
 	{
-		return dateFormat.format(end.getTime());
+		return end;
 	}
 	
 	public String getName()

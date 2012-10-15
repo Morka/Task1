@@ -39,12 +39,12 @@ public abstract class Event{
 		this.date = date;
 	}	
 	
-	public String getDate(){
-		return dateFormat.format(date.getTime());
+	public Calendar getDate(){
+		return date;
 	}
 	
 	public String toString(){
-		return "Location: " + location + ", Duration: " + duration + ", Date: " + this.getDate();
+		return "Location: " + location + ", Duration: " + duration + ", Date: " + dateFormat.format(date.getTime());;
 	}
 	
 }

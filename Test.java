@@ -13,9 +13,10 @@ public class Test {
 		Rehearsal rehearsal = new Rehearsal(20, "Linz", time1, 300);
 		Song song = new Song("Mitt Rommney Style", 160);
 		
+		System.out.println("Objekts - toString()");
 		System.out.println(gig);
 		System.out.println(rehearsal);
 		System.out.println(song);
-		System.out.println(song.getStartDate());
+		System
 	}
 }
