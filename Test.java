@@ -8,13 +8,16 @@ public class Test {
 		Calendar time1 = Calendar.getInstance();
 		Calendar time2 = Calendar.getInstance();
 		Calendar time3 = Calendar.getInstance();
+		Calendar time4 = Calendar.getInstance();
 
+		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 		
 		time1.set(2011, 5, 28);
 		time2.set(2010, 6, 23);
 		time3.set(2012, 6, 23);
+		time4.set(2011, 5, 28);
 
 		Band band = new Band();
 		
@@ -44,7 +47,7 @@ public class Test {
 		
 		System.out.println('\n' + "++++Specific Rehearsals++++");
 		System.out.println("Solution1: " + band.showRehearsals(time2, time3));
-		System.out.println("Solution2: " + band.showRehearsals(time1));
+		System.out.println("Solution2: " + band.showRehearsals(time4));
 		
 	}
 }

@@ -67,10 +67,6 @@ public class Band {
 		fromDate.add(Calendar.DAY_OF_MONTH, -1);
 		toDate.add(Calendar.DAY_OF_MONTH, 1);
 		
-		System.out.println("FROM DATE: " + dateFormat.format(fromDate.getTime()));
-		System.out.println("TO DATE: " + dateFormat.format(toDate.getTime()));
-
-
 		for(Event r : this.eventList){
 			
 			if(r instanceof Rehearsal && (r.getDate().after(fromDate) && r.getDate().before(toDate))) {
