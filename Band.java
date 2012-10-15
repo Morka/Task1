@@ -71,21 +71,6 @@ public class Band {
 		
 		return retString;
 		
-		//Calendar now = Calendar.getInstance();
-		/*String returnString = "";
-		
-		for(Event r : this.eventList){
-			
-			if(r instanceof Rehearsal && r.getDate().equals(specificDate) ) {
-				
-				returnString = returnString + r.toString();
-				
-			}
-			
-		}
-		
-		return returnString;*/
-		
 	}
 	/*
 	public void showRehearsals(Calendar from, Calendar to){
