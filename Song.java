@@ -7,7 +7,6 @@ public class Song
 	private int length; 	//length in seconds
 	private Calendar start;	//Date of first appearence in repertoire
 	private Calendar end;	//last Date of the song in repertoire
-	private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
 	
 	public Song(String name, int length)
 	{
