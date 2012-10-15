@@ -5,10 +5,14 @@ public class Test {
 
 	public static void main(String[] args){
 <<<<<<< HEAD
+<<<<<<< HEAD
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.mm.dd");
 =======
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd.mm.yyyy");
 >>>>>>> added Test cases
+=======
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.mm.dd");
+>>>>>>> test
 
 		
 		Calendar time1 = Calendar.getInstance();
@@ -20,10 +24,14 @@ public class Test {
 		time2.set(2010, 06, 23);
 		time3.set(2012, 06, 23);
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
 >>>>>>> Specific Rehearsal not working
+=======
+		
+>>>>>>> test
 		
 		Band band = new Band();
 		
@@ -57,8 +65,6 @@ public class Test {
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time1));
 =======
 >>>>>>> added Test cases
-		
-		
 		
 		System.out.println('\n' + "Specific Rehearsals");
 		System.out.println("At time 30,05,2011: " + band.showRehearsals(time2, time3));

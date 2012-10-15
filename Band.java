@@ -53,13 +53,10 @@ public class Band {
 		
 	}
 	
-	public String showRehearsals(Calendar fromDate, Calendar toDate){
-		
+	public String showRehearsals(Calendar fromDate, Calendar toDate){		
 		String retString = "";
 		fromDate.add(Calendar.DAY_OF_MONTH, -1);
 		toDate.add(Calendar.DAY_OF_MONTH, 1);
-		System.out.println(fromDate.DAY_OF_MONTH);
-		System.out.println(toDate.DAY_OF_MONTH);
 		
 		for(Event r : this.eventList){
 			
