@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 public abstract class Event{
 	
@@ -39,11 +40,11 @@ public abstract class Event{
 	}	
 	
 	public String getDate(){
-		return dateFormat.format(date.getTime);
+		return dateFormat.format(date.getTime());
 	}
 	
 	public String toString(){
-		return "Location: " + location + ", Duration: " + duration + ", Date: " + getDate());
+		return "Location: " + location + ", Duration: " + duration + ", Date: " + this.getDate();
 	}
 	
 }
