@@ -8,6 +8,10 @@ public class Band {
 	private ArrayList<Rehearsal> rehearsalList = new ArrayList<Rehearsal>();
 	private ArrayList<Song> songList = new ArrayList<Song>();
 	
+	public Band(){
+	
+	}
+	
 	/*public void Band(){
 		
 		
