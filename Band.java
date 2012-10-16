@@ -141,5 +141,28 @@ public class Band {
 		return retString;
 		
 	}
+	
+	public String showSongs(Calendar fromDate, Calendar toDate){
+		
+		String retString = "";
+		fromDate.add(Calendar.DAY_OF_MONTH, -1);
+		toDate.add(Calendar.DAY_OF_MONTH, 1);
+		
+		for(Song r : this.songList){
+			
+			if(r.getEndDate() == null && (r.getStartDate().after(fromDate) && r.getStartDate().before(toDate))) {
+				
+				retString = retString + r.toString() + "\n";
+				
+			}
+			else if(r.getEndDate() != null && (r.getStartDate().after(fromDate) && r.getEndDate().before(toDate))){
+				retString = retString + r.toString() + "\n";
+			}
+			
+		}
+		
+		return retString;
+		
+	}
 
 }

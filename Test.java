@@ -9,19 +9,21 @@ public class Test {
 		Calendar time2 = Calendar.getInstance();
 		Calendar time3 = Calendar.getInstance();
 		Calendar time4 = Calendar.getInstance();
+		Calendar time5 = Calendar.getInstance();
 		
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 		
-		time1.set(2011, 5, 28);
-		time2.set(2010, 6, 23);
-		time3.set(2012, 6, 23);
-		time4.set(2011, 5, 28);
+		time1.set(2009, 5, 28);
+		time2.set(2011, 0, 23);
+		time3.set(2011, 0, 23);
+		time4.set(2012, 5, 28);
+		time5.set(2012, 11, 23);
 
 		Band band = new Band();
 		
-		Gig gig = new Gig(15, "Wien", time1, 20);
-		Rehearsal rehearsal = new Rehearsal(20, "Linz", time1, 300);
+		Gig gig = new Gig(15, "Wien", time3, 20);
+		Rehearsal rehearsal = new Rehearsal(20, "Linz", time3, 300);
 		Song song = new Song("Mitt Romney Style", 160);
 		Member member = new Member("Mitt Romney", "039394919", "Geige");
 		
@@ -30,8 +32,7 @@ public class Test {
 		band.addTrack(song);
 		band.addMember(member);
 		
-		System.out.println("\nNEW");
-		System.out.println("Objekts - toString()");
+		System.out.println("\n\n++++Objekts - toString()++++");
 		System.out.println("gig: " + gig);
 		System.out.println("rehearsal: " + rehearsal);
 		System.out.println("song: " + song);
@@ -45,8 +46,28 @@ public class Test {
 		System.out.println("Song: " + song);
 		
 		System.out.println('\n' + "++++Specific Rehearsals++++");
-		System.out.println("Solution1: " + band.showRehearsals(time2, time3));
-		System.out.println("Solution2: " + band.showRehearsals(time4));
+		System.out.println("Solution1: " + band.showRehearsals(time1, time5));
+		System.out.println("Solution2: " + band.showRehearsals(time2));
 		
+		Gig gig2 = new Gig(20,"Linz", time2, 30);
+		Gig gig3 = new Gig(23, "Bregenz", time4, 3000);
+		band.addEvent(gig2);
+		band.addEvent(gig3);
+		
+		System.out.println("++++Specific Gigs++++");	
+		System.out.println("Gigs from 2009 to 2012:");
+		System.out.println(band.showGigs(time1,time5));
+		
+		System.out.println("++++Specific Events++++");
+		System.out.println("Events from 2011 to 2012");
+		System.out.println(band.showEvents(time2, time5));
+		
+		System.out.println("++++Specific Songs++++");
+		System.out.println("Songs from 2009 to 2012");
+		System.out.println(band.showSongs(time1,time5));
+		
+		band.
+		
+		System.out.println("++++Delete Song++++");
 	}
 }
