@@ -62,12 +62,12 @@ public class Test {
 		System.out.println("Events from 2011 to 2012");
 		System.out.println(band.showEvents(time2, time5));
 		
+		Song song2 = new Song("Melody Dean", 200);
+		band.addTrack(song2);
+		
 		System.out.println("++++Specific Songs++++");
 		System.out.println("Songs from 2009 to 2012");
 		System.out.println(band.showSongs(time1,time5));
 		
-		band.
-		
-		System.out.println("++++Delete Song++++");
 	}
 }
