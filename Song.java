@@ -1,5 +1,9 @@
 import java.util.Calendar;
 
+/*
+ * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+ */
+
 public class Song
 {
 	private String name;  	//song name

@@ -1,13 +1,15 @@
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
+/*
+ * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+ */
+
 public abstract class Event{
 	
 	private int duration; //duration of the Event
-	
 	private String location; //location of the Event
-	
-	private Calendar date; //date AND time of the Event *SimpleDateFormat*
+	private Calendar date; //date AND time of the Event
 	
 	private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 

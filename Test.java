@@ -1,6 +1,10 @@
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
+/*
+ * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+ */
+
 public class Test {
 
 	public static void main(String[] args){

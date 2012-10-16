@@ -1,5 +1,9 @@
 import java.util.Calendar;
 
+/*
+ * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+ */
+
 public class Gig extends Event{
 	
 	private int fee;

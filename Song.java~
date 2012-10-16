@@ -17,7 +17,7 @@ public class Song
 	
 	public void setDate(Calendar date)
 	{
-		this.start = date;
+		this.end = date;
 	}
 	
 	public Calendar getStartDate()

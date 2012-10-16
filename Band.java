@@ -2,16 +2,19 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
+/*
+ * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
+ */
 
 public class Band {
 	
-	private ArrayList<Member> memberList = new ArrayList<Member>();
+	private ArrayList<Member> memberList = new ArrayList<Member>(); 
 	//private ArrayList<Gig> gigList = new ArrayList<Gig>();
 	//private ArrayList<Rehearsal> rehearsalList = new ArrayList<Rehearsal>();
-	private ArrayList<Event> eventList = new ArrayList<Event>();
+	private ArrayList<Event> eventList = new ArrayList<Event>(); 
 	private ArrayList<Song> songList = new ArrayList<Song>();
 	
-			SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+	impleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 	
 	public Band(){
@@ -48,6 +51,13 @@ public class Band {
 		
 	}
 	
+	/*
+	 * Shows Rehearsals on one specific Date
+	 * 
+	 * @param: 1 Specified Date
+	 * @return: retString (String which contains Rehearsals taking place at the time or null)
+	 */
+ 
 	public String showRehearsals(Calendar specificDate){
 		
 		String retString = "";
@@ -61,10 +71,17 @@ public class Band {
 		
 	}
 	
+	
+	/*
+	 * Shows Rehearsals in a given time Period
+	 * 
+	 * @param: fromDate, toDate
+	 * @return: retString (String which contains Rehearsals taking place in the time Period or null)
+	 */
 	public String showRehearsals(Calendar fromDate, Calendar toDate){		
 		String retString = "";
 
-		fromDate.add(Calendar.DAY_OF_MONTH, -1);
+		fromDate.add(Calendar.DAY_OF_MONTH, -1); 
 		toDate.add(Calendar.DAY_OF_MONTH, 1);
 		
 		for(Event r : this.eventList){
