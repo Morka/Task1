@@ -3,13 +3,13 @@ import java.text.SimpleDateFormat;
 
 public abstract class Event{
 	
-	protected int duration; //duration of the Event
+	private int duration; //duration of the Event
 	
-	protected String location; //location of the Event
+	private String location; //location of the Event
 	
-	protected Calendar date; //date AND time of the Event *SimpleDateFormat*
+	private Calendar date; //date AND time of the Event *SimpleDateFormat*
 	
-	protected SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 	
 	public Event(int duration, String location, Calendar date){
