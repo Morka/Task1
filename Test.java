@@ -73,5 +73,16 @@ public class Test {
 		System.out.println("Songs from 2009 to 2012");
 		System.out.println(band.showSongs(time1,time5));
 		
+		System.out.println("++++SumOfCosts++++");
+		System.out.println("Costs from 2009 to 2012");
+		System.out.println(band.sumOfCosts(time1,time5));
+		
+		System.out.println("++++SumOfEarnings++++");
+		System.out.println("Costs from 2009 to 2012");
+		System.out.println(band.sumOfEarnings(time1,time5));
+
+		System.out.println("++++SumOfAll++++");
+		System.out.println("Costs from 2009 to 2012");
+		System.out.println(band.sumOfAll(time1,time5));		
 	}
 }
