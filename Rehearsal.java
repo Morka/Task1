@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -14,7 +14,7 @@ public class Rehearsal extends Event{
 		this.rent = rent;
 	}
 	
-	/*
+	/**
 	 * sets the "rent" of the Rehearsal
 	 *
 	 * @param rent 
@@ -25,7 +25,7 @@ public class Rehearsal extends Event{
 		this.rent = rent;
 	}
 	
-	/*
+	/**
 	 * gives back rent
 	 *
 	 * @return integer that contains the rent

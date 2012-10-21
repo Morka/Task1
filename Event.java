@@ -1,7 +1,7 @@
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -11,7 +11,7 @@ public abstract class Event{
 	private String location; //location of the Event
 	private Calendar date; //date AND time of the Event
 	
-	private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+	private static SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 	
 	public Event(int duration, String location, Calendar date){
@@ -20,7 +20,7 @@ public abstract class Event{
 		this.date = date;
 	}
 	
-	/*
+	/**
 	 * Gives back the "location" of the Event
 	 *
 	 * @param  
@@ -32,7 +32,7 @@ public abstract class Event{
 		return location;
 	}
 	
-	/*
+	/**
 	 * Gives back the "duration" of the Event
 	 *
 	 * @param  
@@ -44,7 +44,7 @@ public abstract class Event{
 		return duration;
 	}
 	
-	/*
+	/**
 	 * Sets "date" of the Event
 	 *
 	 * @param date date of the event 
@@ -54,7 +54,7 @@ public abstract class Event{
 		this.date = date;
 	}	
 	
-	/*
+	/**
 	 * Gives back the "date" of the Event
 	 *
 	 * @param  

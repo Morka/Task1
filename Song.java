@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -19,7 +19,7 @@ public class Song
 		this.end = null;
 	}
 	
-	/*
+	/**
 	 * sets "end" date
 	 *
 	 * @param date 
@@ -32,7 +32,7 @@ public class Song
 		this.end = date;
 	}
 	
-	/*
+	/**
 	 * gives back the "start" date
 	 *
 	 * @param 
@@ -45,7 +45,7 @@ public class Song
 		return start;
 	}
 	
-	/*
+	/**
 	 * gives back the "end" date
 	 *
 	 * @param 
@@ -58,7 +58,7 @@ public class Song
 		return end;
 	}
 	
-	/*
+	/**
 	 * gives back the "name" of the Song
 	 *
 	 * @param 
@@ -71,7 +71,7 @@ public class Song
 		return name;
 	}
 	
-	/*
+	/**
 	 * gives back the "length" of the Song
 	 *
 	 * @param 

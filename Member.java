@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -18,7 +18,7 @@ public class Member {
 		
 	}
 	
-	/*
+	/**
 	 * sets the "exitDate" of the member to the current date
 	 *
 	 */
@@ -29,7 +29,7 @@ public class Member {
 		
 	}
 	
-	/*
+	/**
 	 * Gives back a the "enteringDate" of the Member
 	 *
 	 * @return Calendar
@@ -41,7 +41,7 @@ public class Member {
 		
 	}
 	
-	/*
+	/**
 	 * Gives back a the "exitDate" of the Member
 	 *
 	 * @return Calendar

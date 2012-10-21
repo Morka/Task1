@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -14,14 +14,14 @@ public class Band {
 	private ArrayList<Event> eventList = new ArrayList<Event>(); 
 	private ArrayList<Song> songList = new ArrayList<Song>();
 	
-	SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+	private static SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
 	
 	public Band(){
 	
 	}
 	
-	/*
+	/**
 	 * Adds new "Member" to "memberList"
 	 *
 	 * @param newMember Member to be added
@@ -33,7 +33,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Adds new "Event" to "eventList"
 	 *
 	 * @param newEvent Event to be added
@@ -46,7 +46,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Adds new "Song" to "songList"
 	 *
 	 * @param newSong Song to be added
@@ -60,7 +60,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Shows Rehearsals on one specific Date
 	 * 
 	 * @param specificDate One specific Date
@@ -82,7 +82,7 @@ public class Band {
 	}
 	
 	
-	/*
+	/**
 	 * Shows Rehearsals in a given time Period
 	 * 
 	 * @param fromDate, toDate 
@@ -109,7 +109,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Shows "Gigs" on a specific Date
 	 *
 	 * @param specificDate One specific Date
@@ -127,7 +127,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Shows "Gigs" in a specific Time period
 	 *
 	 * @param fromDate, toDate 
@@ -154,7 +154,7 @@ public class Band {
 		return retString;
 		
 	}
-	/*
+	/**
 	 * Shows "Events" in a specific Time period
 	 *
 	 * @param from, to 
@@ -175,7 +175,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Shows "Member" on a specific Date
 	 *
 	 * @param specificDate
@@ -201,7 +201,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Shows "Songs" in a specific Time period
 	 *
 	 * @param fromDate, toDate 
@@ -232,7 +232,7 @@ public class Band {
 		
 	}
 	
-	/*
+	/**
 	 * Computes the sum of Costs
 	 *
 	 * @param fromDate, toDate 
@@ -256,7 +256,7 @@ public class Band {
 		return sumCosts;
 	}
 	
-	/*
+	/**
 	 * Computes the sum of Earnings
 	 *
 	 * @param fromDate, toDate 
@@ -279,7 +279,7 @@ public class Band {
 		return sumEarnings;
 	}
 	
-	/*
+	/**
 	 * Computes the sum of Earnings minus Costs
 	 *
 	 * @param fromDate, toDate 

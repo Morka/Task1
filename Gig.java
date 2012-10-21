@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-/*
+/**
  * @author Matthias Gusenbauer, Wolfgang Hofer, Alexander Neff
  */
 
@@ -14,7 +14,7 @@ public class Gig extends Event{
 		this.fee = fee;
 	}
 	
-	/*
+	/**
 	 * Gives back the "fee" of the Gig
 	 *
 	 * @param  
@@ -26,7 +26,7 @@ public class Gig extends Event{
 		return fee;
 	}
 	
-	/*
+	/**
 	 * sets a Fee
 	 *
 	 * @param fee integer which specifies the fee
