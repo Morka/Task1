@@ -18,17 +18,34 @@ public class Member {
 		
 	}
 	
+	/*
+	 * sets the "exitDate" of the member to the current date
+	 *
+	 */
+	
 	public void memberExit(){
 		
 		this.exitDate = Calendar.getInstance();
 		
 	}
 	
+	/*
+	 * Gives back a the "enteringDate" of the Member
+	 *
+	 * @return Calendar
+	 */
+	
 	public Calendar getEntryDate(){
 		
 		return this.enteringDate;
 		
 	}
+	
+	/*
+	 * Gives back a the "exitDate" of the Member
+	 *
+	 * @return Calendar
+	 */
 	
 	public Calendar getExitDate(){
 		

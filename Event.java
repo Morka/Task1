@@ -21,25 +21,46 @@ public abstract class Event{
 	}
 	
 	/*
-	public void setLocation(String location){
-		this.location = location;
-	}*/
+	 * Gives back the "location" of the Event
+	 *
+	 * @param  
+	 *
+	 * @return String which contains the location
+	 */
 	
 	public String getLocation(){
 		return location;
 	}
+	
 	/*
-	public void setDuration(int duration){
-		this.duration = duration;
-	}*/
+	 * Gives back the "duration" of the Event
+	 *
+	 * @param  
+	 *
+	 * @return integer which gives back the Duration
+	 */
 	
 	public int getDuration(){
 		return duration;
 	}
 	
+	/*
+	 * Sets "date" of the Event
+	 *
+	 * @param date date of the event 
+	 */
+	
 	public void setDate(Calendar date){
 		this.date = date;
 	}	
+	
+	/*
+	 * Gives back the "date" of the Event
+	 *
+	 * @param  
+	 *
+	 * @return Calendar which contains the date
+	 */
 	
 	public Calendar getDate(){
 		return date;

@@ -19,25 +19,65 @@ public class Song
 		this.end = null;
 	}
 	
+	/*
+	 * sets "end" date
+	 *
+	 * @param date 
+	 *
+	 * @return Calendar
+	 */
+	
 	public void setDate(Calendar date)
 	{
 		this.end = date;
 	}
+	
+	/*
+	 * gives back the "start" date
+	 *
+	 * @param 
+	 *
+	 * @return Calendar containing the start date
+	 */
 	
 	public Calendar getStartDate()
 	{
 		return start;
 	}
 	
+	/*
+	 * gives back the "end" date
+	 *
+	 * @param 
+	 *
+	 * @return Calendar containing the end date
+	 */
+	 
 	public Calendar getEndDate()
 	{
 		return end;
 	}
 	
+	/*
+	 * gives back the "name" of the Song
+	 *
+	 * @param 
+	 *
+	 * @return String which contains the name
+	 */
+	
 	public String getName()
 	{
 		return name;
 	}
+	
+	/*
+	 * gives back the "length" of the Song
+	 *
+	 * @param 
+	 *
+	 * @return integer containing the length
+	 */
 	
 	public int getLength()
 	{

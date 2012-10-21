@@ -21,29 +21,38 @@ public class Band {
 	
 	}
 	
+	/*
+	 * Adds new "Member" to "memberList"
+	 *
+	 * @param newMember Member to be added
+	 *
+	 */
 	public void addMember(Member newMember){
 		
 		this.memberList.add(newMember);
 		
 	}
-
-	/*public void addGig(Gig newGig){
-		
-		this.gigList.add(newGig);
-		
-	}*
 	
-	public void addRehearsal(Rehearsal newRehearsal){
-		
-		this.rehearsalList.add(newRehearsal);
-		
-	}*/
+	/*
+	 * Adds new "Event" to "eventList"
+	 *
+	 * @param newEvent Event to be added
+	 *
+	 */
 	
 	public void addEvent(Event newEvent){
 		
 		this.eventList.add(newEvent);
 		
 	}
+	
+	/*
+	 * Adds new "Song" to "songList"
+	 *
+	 * @param newSong Song to be added
+	 *
+	 * @return
+	 */
 	
 	public void addTrack(Song newSong){
 		
@@ -54,8 +63,9 @@ public class Band {
 	/*
 	 * Shows Rehearsals on one specific Date
 	 * 
-	 * @param: 1 Specified Date
-	 * @return: retString (String which contains Rehearsals taking place at the time or null)
+	 * @param specificDate One specific Date
+	 *
+	 * @return String which contains Rehearsals taking place at the time or null
 	 */
  
 	public String showRehearsals(Calendar specificDate){
@@ -75,8 +85,9 @@ public class Band {
 	/*
 	 * Shows Rehearsals in a given time Period
 	 * 
-	 * @param: fromDate, toDate
-	 * @return: retString (String which contains Rehearsals taking place in the time Period or null)
+	 * @param fromDate, toDate 
+	 *
+	 * @return String which contains Rehearsals taking place in the time Period or null
 	 */
 	public String showRehearsals(Calendar fromDate, Calendar toDate){		
 		String retString = "";
@@ -98,6 +109,14 @@ public class Band {
 		
 	}
 	
+	/*
+	 * Shows "Gigs" on a specific Date
+	 *
+	 * @param specificDate One specific Date
+	 *
+	 * @return String which contains Gigs taking place at that time or null
+	 */
+	
 	public String showGigs(Calendar specificDate){
 		
 		String retString = "";
@@ -107,6 +126,14 @@ public class Band {
 		return retString;
 		
 	}
+	
+	/*
+	 * Shows "Gigs" in a specific Time period
+	 *
+	 * @param fromDate, toDate 
+	 *
+	 * @return String which contains Gigs taking place in the specified time period
+	 */
 	
 	public String showGigs(Calendar fromDate, Calendar toDate){
 		
@@ -127,6 +154,13 @@ public class Band {
 		return retString;
 		
 	}
+	/*
+	 * Shows "Events" in a specific Time period
+	 *
+	 * @param from, to 
+	 *
+	 * @return String which contains "Events" taking place in the specified time period
+	 */
 	
 	
 	public String showEvents(Calendar from, Calendar to){
@@ -140,6 +174,14 @@ public class Band {
 		return retString;
 		
 	}
+	
+	/*
+	 * Shows "Member" on a specific Date
+	 *
+	 * @param specificDate
+	 *
+	 * @return String which contains Members of the Band at a specific Date
+	 */
 	
 	public String showMember(Calendar specificDate){
 		
@@ -158,6 +200,14 @@ public class Band {
 		return retString;
 		
 	}
+	
+	/*
+	 * Shows "Songs" in a specific Time period
+	 *
+	 * @param fromDate, toDate 
+	 *
+	 * @return String which contains "Songs" playable in a specific Time Period
+	 */
 	
 	public String showSongs(Calendar fromDate, Calendar toDate){
 		
@@ -182,6 +232,14 @@ public class Band {
 		
 	}
 	
+	/*
+	 * Computes the sum of Costs
+	 *
+	 * @param fromDate, toDate 
+	 *
+	 * @return integer which contains the sum of Costs
+	 */
+	
 	public int sumOfCosts(Calendar fromDate, Calendar toDate){
 		int sumCosts = 0;
 				
@@ -198,6 +256,14 @@ public class Band {
 		return sumCosts;
 	}
 	
+	/*
+	 * Computes the sum of Earnings
+	 *
+	 * @param fromDate, toDate 
+	 *
+	 * @return integer which contains the sum of Earnings
+	 */
+	
 	public int sumOfEarnings(Calendar fromDate, Calendar toDate){
 		int sumEarnings = 0;
 		
@@ -212,6 +278,14 @@ public class Band {
 		
 		return sumEarnings;
 	}
+	
+	/*
+	 * Computes the sum of Earnings minus Costs
+	 *
+	 * @param fromDate, toDate 
+	 *
+	 * @return integer which contains the sum of Earnings minus Costs
+	 */
 	
 	public int sumOfAll(Calendar fromDate, Calendar toDate){
 		int sumAll = 0;
